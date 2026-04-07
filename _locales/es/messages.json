@@ -1,0 +1,186 @@
+{
+  "appName": {
+    "message": "Hiyori Tools"
+  },
+  "appDesc": {
+    "message": "Simpática herramienta de gestión de URLs y archivado web"
+  },
+  "popupTitle": {
+    "message": "🌸 hiyori's url 🌸"
+  },
+  "sectionOps": {
+    "message": "✦ Acciones"
+  },
+  "btnCopy": {
+    "message": "✎ Copiar todas las URLs abiertas"
+  },
+  "btnOpenAll": {
+    "message": "▷ Abrir todas las pestañas"
+  },
+  "sectionSave": {
+    "message": "💝 Guardar"
+  },
+  "btnHarvest": {
+    "message": "✨ Guardar todo"
+  },
+  "btnSaveCurrent": {
+    "message": "🌸 Guardar página actual"
+  },
+  "sectionAuto": {
+    "message": "⏱ Configuración automática"
+  },
+  "autoOpenDelay": {
+    "message": "Tras abrir, retraso de"
+  },
+  "autoSaveUnit": {
+    "message": "seg y autoguardar"
+  },
+  "sectionFormat": {
+    "message": "🎀 Formato de archivo"
+  },
+  "formatPNG": {
+    "message": "Captura de pantalla (.png)"
+  },
+  "formatMD": {
+    "message": "Documento (.md)"
+  },
+  "formatPDF": {
+    "message": "Documento (.pdf)"
+  },
+  "formatFullPage": {
+    "message": "Captura de página completa"
+  },
+  "formatNotion": {
+    "message": "Sincronizar con Notion"
+  },
+  "sectionNotion": {
+    "message": "◈ Configuración de Notion"
+  },
+  "notionLabelToken": {
+    "message": "Token de API"
+  },
+  "notionLabelDb": {
+    "message": "ID de base de datos"
+  },
+  "notionFieldSettings": {
+    "message": "▸ Nombres de campos (los valores predeterminados suelen ser válidos)"
+  },
+  "notionTitleField": {
+    "message": "Nombre del campo título"
+  },
+  "notionUrlField": {
+    "message": "Nombre del campo URL"
+  },
+  "notionTagsField": {
+    "message": "Nombre del campo etiquetas"
+  },
+  "notionDateField": {
+    "message": "Nombre del campo fecha"
+  },
+  "btnSaveNotion": {
+    "message": "Guardar ajustes de Notion ✨"
+  },
+  "btnNotionSaved": {
+    "message": "Guardado ✓"
+  },
+  "sectionUrlList": {
+    "message": "✏ Lista de URLs"
+  },
+  "urlPlaceholder": {
+    "message": "Una URL por línea, ej.:\nhttps://www.example.com\ngithub.com"
+  },
+  "sectionExclude": {
+    "message": "🚫 URLs excluidas"
+  },
+  "excludePlaceholder": {
+    "message": "Estas URLs no serán copiadas, abiertas ni guardadas\nUna URL o palabra clave por línea"
+  },
+  "footer": {
+    "message": "Made with ♡ by sandleft"
+  },
+  "progressReady": {
+    "message": "Listo..."
+  },
+  "progressOpening": {
+    "message": "Abriendo pestañas..."
+  },
+  "progressSaving": {
+    "message": "Autoguardando..."
+  },
+  "progressAutoSave": {
+    "message": "$COUNT$ pestaña(s) abierta(s), autoguardando en $DELAY$ seg...",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "delay": {
+        "content": "$2"
+      }
+    }
+  },
+  "alertNoUrl": {
+    "message": "¡Por favor, introduce al menos una URL!"
+  },
+  "alertAllExcluded": {
+    "message": "¡Todas las URLs están en la lista de exclusión, nada que abrir!"
+  },
+  "alertOpenedTabs": {
+    "message": "¡$COUNT$ pestaña(s) abierta(s)!",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertAutoSaveNoFormat": {
+    "message": "¡$COUNT$ pestaña(s) abierta(s)!\nNingún formato seleccionado, autoguardado omitido.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertNoValidUrls": {
+    "message": "¡No hay URLs válidas que copiar! No hay páginas HTTP abiertas."
+  },
+  "alertAllExcludedCopy": {
+    "message": "¡Todas las URLs abiertas están excluidas, nada que copiar!"
+  },
+  "alertCopied": {
+    "message": "¡$COUNT$ URL(s) copiada(s)!",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertCopyFailed": {
+    "message": "Error al copiar: "
+  },
+  "alertNoFormat": {
+    "message": "¡Por favor, selecciona al menos un formato!"
+  },
+  "alertSaveFailed": {
+    "message": "Error al guardar: "
+  },
+  "alertSaveComplete": {
+    "message": "¡Guardado completado!"
+  },
+  "alertSaveResult": {
+    "message": "¡Guardado completado!\nÉxito: $SUCCESS$\nFallidos: $FAIL$\n\n$DETAILS$",
+    "placeholders": {
+      "success": {
+        "content": "$1"
+      },
+      "fail": {
+        "content": "$2"
+      },
+      "details": {
+        "content": "$3"
+      }
+    }
+  },
+  "harvestError": {
+    "message": "Error de guardado: "
+  }
+}

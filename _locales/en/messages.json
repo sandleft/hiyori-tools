@@ -1,0 +1,186 @@
+{
+  "appName": {
+    "message": "Hiyori Tools"
+  },
+  "appDesc": {
+    "message": "Cute URL manager and web harvest tool"
+  },
+  "popupTitle": {
+    "message": "🌸 hiyori's url 🌸"
+  },
+  "sectionOps": {
+    "message": "✦ Actions"
+  },
+  "btnCopy": {
+    "message": "✎ Copy All Open URLs"
+  },
+  "btnOpenAll": {
+    "message": "▷ Open All Tabs"
+  },
+  "sectionSave": {
+    "message": "💝 Save"
+  },
+  "btnHarvest": {
+    "message": "✨ Save All"
+  },
+  "btnSaveCurrent": {
+    "message": "🌸 Save Current Page"
+  },
+  "sectionAuto": {
+    "message": "⏱ Auto Settings"
+  },
+  "autoOpenDelay": {
+    "message": "After opening, delay"
+  },
+  "autoSaveUnit": {
+    "message": "sec then auto-save"
+  },
+  "sectionFormat": {
+    "message": "🎀 Archive Format"
+  },
+  "formatPNG": {
+    "message": "Screenshot (.png)"
+  },
+  "formatMD": {
+    "message": "Document (.md)"
+  },
+  "formatPDF": {
+    "message": "Document (.pdf)"
+  },
+  "formatFullPage": {
+    "message": "Full-page screenshot"
+  },
+  "formatNotion": {
+    "message": "Sync to Notion"
+  },
+  "sectionNotion": {
+    "message": "◈ Notion Config"
+  },
+  "notionLabelToken": {
+    "message": "API Token"
+  },
+  "notionLabelDb": {
+    "message": "Database ID"
+  },
+  "notionFieldSettings": {
+    "message": "▸ Field names (defaults are usually fine)"
+  },
+  "notionTitleField": {
+    "message": "Title field name"
+  },
+  "notionUrlField": {
+    "message": "URL field name"
+  },
+  "notionTagsField": {
+    "message": "Tags field name"
+  },
+  "notionDateField": {
+    "message": "Date field name"
+  },
+  "btnSaveNotion": {
+    "message": "Save Notion Settings ✨"
+  },
+  "btnNotionSaved": {
+    "message": "Saved ✓"
+  },
+  "sectionUrlList": {
+    "message": "✏ URL List"
+  },
+  "urlPlaceholder": {
+    "message": "One URL per line, e.g.:\nhttps://www.example.com\ngithub.com\nbilibili.com"
+  },
+  "sectionExclude": {
+    "message": "🚫 Exclude URLs"
+  },
+  "excludePlaceholder": {
+    "message": "These URLs won't be copied, opened or saved\nOne URL or keyword per line, e.g.:\ngoogle.com\nbaidu.com"
+  },
+  "footer": {
+    "message": "Made with ♡ by sandleft"
+  },
+  "progressReady": {
+    "message": "Ready..."
+  },
+  "progressOpening": {
+    "message": "Opening tabs..."
+  },
+  "progressSaving": {
+    "message": "Auto-saving..."
+  },
+  "progressAutoSave": {
+    "message": "Opened $COUNT$ tabs, auto-saving in $DELAY$ sec...",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "delay": {
+        "content": "$2"
+      }
+    }
+  },
+  "alertNoUrl": {
+    "message": "Please enter at least one URL!"
+  },
+  "alertAllExcluded": {
+    "message": "All URLs are in the exclude list, nothing to open!"
+  },
+  "alertOpenedTabs": {
+    "message": "Opened $COUNT$ tab(s)!",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertAutoSaveNoFormat": {
+    "message": "Opened $COUNT$ tab(s)!\nNote: No save format selected, auto-save skipped.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertNoValidUrls": {
+    "message": "No valid URLs to copy! No HTTP pages are currently open."
+  },
+  "alertAllExcludedCopy": {
+    "message": "All open URLs are in the exclude list, nothing to copy!"
+  },
+  "alertCopied": {
+    "message": "Copied $COUNT$ URL(s)!",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertCopyFailed": {
+    "message": "Copy failed, please retry: "
+  },
+  "alertNoFormat": {
+    "message": "Please select at least one save format!"
+  },
+  "alertSaveFailed": {
+    "message": "Save failed: "
+  },
+  "alertSaveComplete": {
+    "message": "Save complete!"
+  },
+  "alertSaveResult": {
+    "message": "Save complete!\nSuccess: $SUCCESS$\nFailed: $FAIL$\n\n$DETAILS$",
+    "placeholders": {
+      "success": {
+        "content": "$1"
+      },
+      "fail": {
+        "content": "$2"
+      },
+      "details": {
+        "content": "$3"
+      }
+    }
+  },
+  "harvestError": {
+    "message": "Save error: "
+  }
+}

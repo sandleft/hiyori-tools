@@ -1,0 +1,186 @@
+{
+  "appName": {
+    "message": "Hiyori Tools"
+  },
+  "appDesc": {
+    "message": "可愛的網址管理和網頁收割工具"
+  },
+  "popupTitle": {
+    "message": "🌸 hiyori's url 🌸"
+  },
+  "sectionOps": {
+    "message": "✦ 操作"
+  },
+  "btnCopy": {
+    "message": "✎ 一鍵複製已開啟網址"
+  },
+  "btnOpenAll": {
+    "message": "▷ 一鍵開啟所有分頁"
+  },
+  "sectionSave": {
+    "message": "💝 儲存"
+  },
+  "btnHarvest": {
+    "message": "✨ 一鍵儲存"
+  },
+  "btnSaveCurrent": {
+    "message": "🌸 儲存目前網頁"
+  },
+  "sectionAuto": {
+    "message": "⏱ 自動設定"
+  },
+  "autoOpenDelay": {
+    "message": "一鍵開啟網頁後延遲"
+  },
+  "autoSaveUnit": {
+    "message": "秒自動儲存"
+  },
+  "sectionFormat": {
+    "message": "🎀 封存格式設定"
+  },
+  "formatPNG": {
+    "message": "截圖 (.png)"
+  },
+  "formatMD": {
+    "message": "文件 (.md)"
+  },
+  "formatPDF": {
+    "message": "文件 (.pdf)"
+  },
+  "formatFullPage": {
+    "message": "整頁截圖"
+  },
+  "formatNotion": {
+    "message": "同步到 Notion"
+  },
+  "sectionNotion": {
+    "message": "◈ Notion 設定"
+  },
+  "notionLabelToken": {
+    "message": "API Token"
+  },
+  "notionLabelDb": {
+    "message": "資料庫 ID"
+  },
+  "notionFieldSettings": {
+    "message": "▸ 欄位名稱設定（預設通常不需更改）"
+  },
+  "notionTitleField": {
+    "message": "標題欄位名稱"
+  },
+  "notionUrlField": {
+    "message": "連結欄位名稱"
+  },
+  "notionTagsField": {
+    "message": "標籤欄位名稱"
+  },
+  "notionDateField": {
+    "message": "日期欄位名稱"
+  },
+  "btnSaveNotion": {
+    "message": "儲存 Notion 設定 ✨"
+  },
+  "btnNotionSaved": {
+    "message": "已儲存 ✓"
+  },
+  "sectionUrlList": {
+    "message": "✏ 網址清單"
+  },
+  "urlPlaceholder": {
+    "message": "每行一個網址，例如：\nhttps://www.example.com\ngithub.com\nbilibili.com"
+  },
+  "sectionExclude": {
+    "message": "🚫 排除網址"
+  },
+  "excludePlaceholder": {
+    "message": "這些網址不會被複製、開啟或儲存\n每行一個網址或關鍵字，例如：\ngoogle.com\nbaidu.com"
+  },
+  "footer": {
+    "message": "Made with ♡ by sandleft"
+  },
+  "progressReady": {
+    "message": "準備中..."
+  },
+  "progressOpening": {
+    "message": "正在開啟分頁..."
+  },
+  "progressSaving": {
+    "message": "正在自動儲存..."
+  },
+  "progressAutoSave": {
+    "message": "已開啟 $COUNT$ 個分頁，$DELAY$ 秒後自動儲存...",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "delay": {
+        "content": "$2"
+      }
+    }
+  },
+  "alertNoUrl": {
+    "message": "請先輸入網址！"
+  },
+  "alertAllExcluded": {
+    "message": "所有網址都在排除清單中，沒有可開啟的網址！"
+  },
+  "alertOpenedTabs": {
+    "message": "已開啟 $COUNT$ 個分頁！",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertAutoSaveNoFormat": {
+    "message": "已開啟 $COUNT$ 個分頁！\n提示：未選擇任何儲存格式，無法自動儲存。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertNoValidUrls": {
+    "message": "沒有可複製的網址！目前沒有開啟有效的網頁。"
+  },
+  "alertAllExcludedCopy": {
+    "message": "所有已開啟的網址都在排除清單中，沒有可複製的網址！"
+  },
+  "alertCopied": {
+    "message": "已複製 $COUNT$ 個網址！",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertCopyFailed": {
+    "message": "複製失敗，請重試："
+  },
+  "alertNoFormat": {
+    "message": "請至少選擇一種儲存格式！"
+  },
+  "alertSaveFailed": {
+    "message": "儲存失敗："
+  },
+  "alertSaveComplete": {
+    "message": "儲存完成！"
+  },
+  "alertSaveResult": {
+    "message": "儲存完成！\n成功：$SUCCESS$ 個\n失敗：$FAIL$ 個\n\n$DETAILS$",
+    "placeholders": {
+      "success": {
+        "content": "$1"
+      },
+      "fail": {
+        "content": "$2"
+      },
+      "details": {
+        "content": "$3"
+      }
+    }
+  },
+  "harvestError": {
+    "message": "儲存出錯："
+  }
+}

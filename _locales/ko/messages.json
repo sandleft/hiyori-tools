@@ -1,0 +1,186 @@
+{
+  "appName": {
+    "message": "Hiyori Tools"
+  },
+  "appDesc": {
+    "message": "귀여운 URL 관리 및 웹 아카이브 도구"
+  },
+  "popupTitle": {
+    "message": "🌸 hiyori's url 🌸"
+  },
+  "sectionOps": {
+    "message": "✦ 작업"
+  },
+  "btnCopy": {
+    "message": "✎ 열린 URL 모두 복사"
+  },
+  "btnOpenAll": {
+    "message": "▷ 모든 탭 열기"
+  },
+  "sectionSave": {
+    "message": "💝 저장"
+  },
+  "btnHarvest": {
+    "message": "✨ 전체 저장"
+  },
+  "btnSaveCurrent": {
+    "message": "🌸 현재 페이지 저장"
+  },
+  "sectionAuto": {
+    "message": "⏱ 자동 설정"
+  },
+  "autoOpenDelay": {
+    "message": "탭 열기 후"
+  },
+  "autoSaveUnit": {
+    "message": "초 뒤 자동 저장"
+  },
+  "sectionFormat": {
+    "message": "🎀 아카이브 형식"
+  },
+  "formatPNG": {
+    "message": "스크린샷 (.png)"
+  },
+  "formatMD": {
+    "message": "문서 (.md)"
+  },
+  "formatPDF": {
+    "message": "문서 (.pdf)"
+  },
+  "formatFullPage": {
+    "message": "전체 페이지 스크린샷"
+  },
+  "formatNotion": {
+    "message": "Notion에 동기화"
+  },
+  "sectionNotion": {
+    "message": "◈ Notion 설정"
+  },
+  "notionLabelToken": {
+    "message": "API 토큰"
+  },
+  "notionLabelDb": {
+    "message": "데이터베이스 ID"
+  },
+  "notionFieldSettings": {
+    "message": "▸ 필드명 설정 (기본값으로 충분한 경우가 많습니다)"
+  },
+  "notionTitleField": {
+    "message": "제목 필드명"
+  },
+  "notionUrlField": {
+    "message": "URL 필드명"
+  },
+  "notionTagsField": {
+    "message": "태그 필드명"
+  },
+  "notionDateField": {
+    "message": "날짜 필드명"
+  },
+  "btnSaveNotion": {
+    "message": "Notion 설정 저장 ✨"
+  },
+  "btnNotionSaved": {
+    "message": "저장됨 ✓"
+  },
+  "sectionUrlList": {
+    "message": "✏ URL 목록"
+  },
+  "urlPlaceholder": {
+    "message": "한 줄에 URL 하나, 예:\nhttps://www.example.com\ngithub.com"
+  },
+  "sectionExclude": {
+    "message": "🚫 제외 URL"
+  },
+  "excludePlaceholder": {
+    "message": "이 URL은 복사·열기·저장에서 제외됩니다\n한 줄에 URL 또는 키워드 하나"
+  },
+  "footer": {
+    "message": "Made with ♡ by sandleft"
+  },
+  "progressReady": {
+    "message": "준비 중..."
+  },
+  "progressOpening": {
+    "message": "탭을 열고 있습니다..."
+  },
+  "progressSaving": {
+    "message": "자동 저장 중..."
+  },
+  "progressAutoSave": {
+    "message": "$COUNT$개 탭 열림, $DELAY$초 후 자동 저장...",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "delay": {
+        "content": "$2"
+      }
+    }
+  },
+  "alertNoUrl": {
+    "message": "URL을 입력해주세요!"
+  },
+  "alertAllExcluded": {
+    "message": "모든 URL이 제외 목록에 있습니다, 열 항목이 없습니다!"
+  },
+  "alertOpenedTabs": {
+    "message": "$COUNT$개 탭을 열었습니다!",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertAutoSaveNoFormat": {
+    "message": "$COUNT$개 탭을 열었습니다!\n저장 형식이 선택되지 않아 자동 저장을 건너뜁니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertNoValidUrls": {
+    "message": "복사할 유효한 URL이 없습니다! HTTP 페이지가 열려 있지 않습니다."
+  },
+  "alertAllExcludedCopy": {
+    "message": "열린 URL 모두 제외 목록에 있습니다, 복사할 항목이 없습니다!"
+  },
+  "alertCopied": {
+    "message": "$COUNT$개 URL 복사 완료!",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertCopyFailed": {
+    "message": "복사 실패: "
+  },
+  "alertNoFormat": {
+    "message": "저장 형식을 하나 이상 선택해주세요!"
+  },
+  "alertSaveFailed": {
+    "message": "저장 실패: "
+  },
+  "alertSaveComplete": {
+    "message": "저장 완료!"
+  },
+  "alertSaveResult": {
+    "message": "저장 완료!\n성공: $SUCCESS$개\n실패: $FAIL$개\n\n$DETAILS$",
+    "placeholders": {
+      "success": {
+        "content": "$1"
+      },
+      "fail": {
+        "content": "$2"
+      },
+      "details": {
+        "content": "$3"
+      }
+    }
+  },
+  "harvestError": {
+    "message": "저장 오류: "
+  }
+}

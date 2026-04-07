@@ -1,0 +1,186 @@
+{
+  "appName": {
+    "message": "Hiyori Tools"
+  },
+  "appDesc": {
+    "message": "かわいいURL管理・ウェブ収集ツール"
+  },
+  "popupTitle": {
+    "message": "🌸 hiyori's url 🌸"
+  },
+  "sectionOps": {
+    "message": "✦ 操作"
+  },
+  "btnCopy": {
+    "message": "✎ 開いているURLを一括コピー"
+  },
+  "btnOpenAll": {
+    "message": "▷ すべてのタブを開く"
+  },
+  "sectionSave": {
+    "message": "💝 保存"
+  },
+  "btnHarvest": {
+    "message": "✨ 一括保存"
+  },
+  "btnSaveCurrent": {
+    "message": "🌸 現在のページを保存"
+  },
+  "sectionAuto": {
+    "message": "⏱ 自動設定"
+  },
+  "autoOpenDelay": {
+    "message": "タブを開いてから"
+  },
+  "autoSaveUnit": {
+    "message": "秒後に自動保存"
+  },
+  "sectionFormat": {
+    "message": "🎀 アーカイブ形式設定"
+  },
+  "formatPNG": {
+    "message": "スクリーンショット (.png)"
+  },
+  "formatMD": {
+    "message": "ドキュメント (.md)"
+  },
+  "formatPDF": {
+    "message": "ドキュメント (.pdf)"
+  },
+  "formatFullPage": {
+    "message": "フルページスクリーンショット"
+  },
+  "formatNotion": {
+    "message": "Notionに同期"
+  },
+  "sectionNotion": {
+    "message": "◈ Notion 設定"
+  },
+  "notionLabelToken": {
+    "message": "API トークン"
+  },
+  "notionLabelDb": {
+    "message": "データベース ID"
+  },
+  "notionFieldSettings": {
+    "message": "▸ フィールド名設定（通常はデフォルトのままでOK）"
+  },
+  "notionTitleField": {
+    "message": "タイトルフィールド名"
+  },
+  "notionUrlField": {
+    "message": "URLフィールド名"
+  },
+  "notionTagsField": {
+    "message": "タグフィールド名"
+  },
+  "notionDateField": {
+    "message": "日付フィールド名"
+  },
+  "btnSaveNotion": {
+    "message": "Notion設定を保存 ✨"
+  },
+  "btnNotionSaved": {
+    "message": "保存済み ✓"
+  },
+  "sectionUrlList": {
+    "message": "✏ URLリスト"
+  },
+  "urlPlaceholder": {
+    "message": "1行に1つのURL、例：\nhttps://www.example.com\ngithub.com"
+  },
+  "sectionExclude": {
+    "message": "🚫 除外URL"
+  },
+  "excludePlaceholder": {
+    "message": "これらのURLはコピー・開く・保存されません\n1行に1つのURLまたはキーワード"
+  },
+  "footer": {
+    "message": "Made with ♡ by sandleft"
+  },
+  "progressReady": {
+    "message": "準備中..."
+  },
+  "progressOpening": {
+    "message": "タブを開いています..."
+  },
+  "progressSaving": {
+    "message": "自動保存中..."
+  },
+  "progressAutoSave": {
+    "message": "$COUNT$ 個のタブを開きました、$DELAY$ 秒後に自動保存...",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "delay": {
+        "content": "$2"
+      }
+    }
+  },
+  "alertNoUrl": {
+    "message": "URLを入力してください！"
+  },
+  "alertAllExcluded": {
+    "message": "すべてのURLが除外リストに含まれています！"
+  },
+  "alertOpenedTabs": {
+    "message": "$COUNT$ 個のタブを開きました！",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertAutoSaveNoFormat": {
+    "message": "$COUNT$ 個のタブを開きました！\n保存形式が選択されていないため、自動保存できません。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertNoValidUrls": {
+    "message": "コピーできるURLがありません！有効なページが開かれていません。"
+  },
+  "alertAllExcludedCopy": {
+    "message": "開いているURLがすべて除外リストに含まれています！"
+  },
+  "alertCopied": {
+    "message": "$COUNT$ 個のURLをコピーしました！",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertCopyFailed": {
+    "message": "コピーに失敗しました: "
+  },
+  "alertNoFormat": {
+    "message": "保存形式を少なくとも1つ選択してください！"
+  },
+  "alertSaveFailed": {
+    "message": "保存失敗: "
+  },
+  "alertSaveComplete": {
+    "message": "保存完了！"
+  },
+  "alertSaveResult": {
+    "message": "保存完了！\n成功: $SUCCESS$ 件\n失敗: $FAIL$ 件\n\n$DETAILS$",
+    "placeholders": {
+      "success": {
+        "content": "$1"
+      },
+      "fail": {
+        "content": "$2"
+      },
+      "details": {
+        "content": "$3"
+      }
+    }
+  },
+  "harvestError": {
+    "message": "保存エラー: "
+  }
+}

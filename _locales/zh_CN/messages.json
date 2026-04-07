@@ -1,0 +1,186 @@
+{
+  "appName": {
+    "message": "Hiyori Tools"
+  },
+  "appDesc": {
+    "message": "可爱的网址管理和网页收割工具"
+  },
+  "popupTitle": {
+    "message": "🌸 hiyori's url 🌸"
+  },
+  "sectionOps": {
+    "message": "✦ 操作"
+  },
+  "btnCopy": {
+    "message": "✎ 一键复制已打开网址"
+  },
+  "btnOpenAll": {
+    "message": "▷ 一键开启所有标签页"
+  },
+  "sectionSave": {
+    "message": "💝 保存"
+  },
+  "btnHarvest": {
+    "message": "✨ 一键保存"
+  },
+  "btnSaveCurrent": {
+    "message": "🌸 保存当前网页"
+  },
+  "sectionAuto": {
+    "message": "⏱ 自动设置"
+  },
+  "autoOpenDelay": {
+    "message": "一键打开网页后延迟"
+  },
+  "autoSaveUnit": {
+    "message": "秒自动保存"
+  },
+  "sectionFormat": {
+    "message": "🎀 归档格式设置"
+  },
+  "formatPNG": {
+    "message": "截图 (.png)"
+  },
+  "formatMD": {
+    "message": "文档 (.md)"
+  },
+  "formatPDF": {
+    "message": "文档 (.pdf)"
+  },
+  "formatFullPage": {
+    "message": "整张网页截图"
+  },
+  "formatNotion": {
+    "message": "同步到 Notion"
+  },
+  "sectionNotion": {
+    "message": "◈ Notion 配置"
+  },
+  "notionLabelToken": {
+    "message": "API Token"
+  },
+  "notionLabelDb": {
+    "message": "数据库 ID"
+  },
+  "notionFieldSettings": {
+    "message": "▸ 字段名设置（默认通常不用改）"
+  },
+  "notionTitleField": {
+    "message": "标题字段名"
+  },
+  "notionUrlField": {
+    "message": "链接字段名"
+  },
+  "notionTagsField": {
+    "message": "标签字段名"
+  },
+  "notionDateField": {
+    "message": "日期字段名"
+  },
+  "btnSaveNotion": {
+    "message": "保存 Notion 设置 ✨"
+  },
+  "btnNotionSaved": {
+    "message": "已保存 ✓"
+  },
+  "sectionUrlList": {
+    "message": "✏ 网址列表"
+  },
+  "urlPlaceholder": {
+    "message": "每行一个网址，例如：\nhttps://www.example.com\ngithub.com\nbilibili.com"
+  },
+  "sectionExclude": {
+    "message": "🚫 排除网址"
+  },
+  "excludePlaceholder": {
+    "message": "这些网址不会被复制、打开或保存\n每行一个网址或关键词，例如：\ngoogle.com\nbaidu.com"
+  },
+  "footer": {
+    "message": "Made with ♡ by sandleft"
+  },
+  "progressReady": {
+    "message": "准备中..."
+  },
+  "progressOpening": {
+    "message": "正在打开标签页..."
+  },
+  "progressSaving": {
+    "message": "正在自动保存..."
+  },
+  "progressAutoSave": {
+    "message": "已打开 $COUNT$ 个标签页，$DELAY$ 秒后自动保存...",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "delay": {
+        "content": "$2"
+      }
+    }
+  },
+  "alertNoUrl": {
+    "message": "请先输入网址！"
+  },
+  "alertAllExcluded": {
+    "message": "所有网址都在排除列表中，没有可打开的网址！"
+  },
+  "alertOpenedTabs": {
+    "message": "已打开 $COUNT$ 个标签页！",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertAutoSaveNoFormat": {
+    "message": "已打开 $COUNT$ 个标签页！\n提示：没有选择任何保存格式，无法自动保存。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertNoValidUrls": {
+    "message": "没有可复制的网址！当前没有打开有效的网页。"
+  },
+  "alertAllExcludedCopy": {
+    "message": "所有打开的网址都在排除列表中，没有可复制的网址！"
+  },
+  "alertCopied": {
+    "message": "已复制 $COUNT$ 个网址！",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertCopyFailed": {
+    "message": "复制失败，请重试: "
+  },
+  "alertNoFormat": {
+    "message": "请至少选择一种保存格式！"
+  },
+  "alertSaveFailed": {
+    "message": "保存失败: "
+  },
+  "alertSaveComplete": {
+    "message": "保存完成！"
+  },
+  "alertSaveResult": {
+    "message": "保存完成！\n成功: $SUCCESS$ 个\n失败: $FAIL$ 个\n\n$DETAILS$",
+    "placeholders": {
+      "success": {
+        "content": "$1"
+      },
+      "fail": {
+        "content": "$2"
+      },
+      "details": {
+        "content": "$3"
+      }
+    }
+  },
+  "harvestError": {
+    "message": "保存出错: "
+  }
+}

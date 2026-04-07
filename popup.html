@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌸 Hiyori Tools</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- 标题 -->
+    <h1 class="title" data-i18n="popupTitle">🌸 hiyori's url 🌸</h1>
+    
+    <!-- 操作按钮 -->
+    <div class="section">
+      <div class="section-title" data-i18n="sectionOps">✦ 操作</div>
+      <div class="button-group">
+        <button class="btn btn-secondary" id="copyUrlsBtn" data-i18n="btnCopy">✎ 一键复制已打开网址</button>
+        <button class="btn btn-primary"   id="openAllBtn"  data-i18n="btnOpenAll">▷ 一键开启所有标签页</button>
+      </div>
+    </div>
+
+    <!-- 进度条 -->
+    <div class="progress-container" id="progressContainer" style="display: none;">
+      <div class="progress-bar">
+        <div class="progress-fill" id="progressBar"></div>
+      </div>
+      <div class="progress-text" id="progressText" data-i18n="progressReady">准备中...</div>
+    </div>
+    
+    <!-- 保存按钮 -->
+    <div class="section save-section">
+      <div class="section-title" data-i18n="sectionSave">💝 保存</div>
+      <button class="btn btn-harvest" id="harvestAllBtn"  data-i18n="btnHarvest">✨ 一键保存</button>
+      <button class="btn btn-current" id="saveCurrentBtn" data-i18n="btnSaveCurrent">🌸 保存当前网页</button>
+    </div>
+    
+    <!-- 自动设置 -->
+    <div class="section auto-settings">
+      <div class="section-title" data-i18n="sectionAuto">⏱ 自动设置</div>
+      <div class="auto-item">
+        <span class="auto-label" data-i18n="autoOpenDelay">一键打开网页后延迟</span>
+        <input type="number" id="autoSaveDelay" class="auto-input-small" min="0" max="300" placeholder="秒">
+        <span class="auto-unit" data-i18n="autoSaveUnit">秒自动保存</span>
+      </div>
+    </div>
+    
+    <!-- 归档格式设置 -->
+    <div class="section">
+      <div class="section-title" data-i18n="sectionFormat">🎀 归档格式设置</div>
+      <div class="checkbox-group">
+        <label class="checkbox-item">
+          <input type="checkbox" id="savePNG">
+          <span class="checkmark"></span>
+          <span class="label-text" data-i18n="formatPNG">截图 (.png)</span>
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" id="saveMD">
+          <span class="checkmark"></span>
+          <span class="label-text" data-i18n="formatMD">文档 (.md)</span>
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" id="savePDF">
+          <span class="checkmark"></span>
+          <span class="label-text" data-i18n="formatPDF">文档 (.pdf)</span>
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" id="saveFullPage">
+          <span class="checkmark"></span>
+          <span class="label-text" data-i18n="formatFullPage">整张网页截图</span>
+        </label>
+        <label class="checkbox-item">
+          <input type="checkbox" id="saveNotion">
+          <span class="checkmark"></span>
+          <span class="label-text" data-i18n="formatNotion">同步到Notion</span>
+        </label>
+      </div>
+    </div>
+    
+    <!-- Notion 配置 -->
+    <div class="section notion-config-section" id="notionConfigSection" style="display:none;">
+      <div class="section-title" data-i18n="sectionNotion">◈ Notion 配置</div>
+      <div class="notion-field">
+        <label class="notion-label" data-i18n="notionLabelToken">API Token</label>
+        <input type="password" id="notionApiKey" class="notion-input" placeholder="secret_...">
+      </div>
+      <div class="notion-field">
+        <label class="notion-label" data-i18n="notionLabelDb">数据库 ID</label>
+        <input type="text" id="notionDatabaseId" class="notion-input" data-i18n-placeholder="notionLabelDb">
+      </div>
+      <details class="notion-details">
+        <summary data-i18n="notionFieldSettings">▸ 字段名设置（默认通常不用改）</summary>
+        <div class="notion-field">
+          <label class="notion-label" data-i18n="notionTitleField">标题字段名</label>
+          <input type="text" id="notionPropTitle" class="notion-input" placeholder="Title">
+        </div>
+        <div class="notion-field">
+          <label class="notion-label" data-i18n="notionUrlField">链接字段名</label>
+          <input type="text" id="notionPropUrl" class="notion-input" placeholder="URL">
+        </div>
+        <div class="notion-field">
+          <label class="notion-label" data-i18n="notionTagsField">标签字段名</label>
+          <input type="text" id="notionPropTags" class="notion-input" placeholder="Tags">
+        </div>
+        <div class="notion-field">
+          <label class="notion-label" data-i18n="notionDateField">日期字段名</label>
+          <input type="text" id="notionPropTime" class="notion-input" placeholder="Time">
+        </div>
+      </details>
+      <button class="btn btn-harvest" id="saveNotionConfigBtn"
+              data-i18n="btnSaveNotion" style="margin-top:10px;">保存 Notion 设置 ✨</button>
+    </div>
+
+    <!-- 网址输入区域 -->
+    <div class="section">
+      <div class="section-header">
+        <span class="section-title" data-i18n="sectionUrlList">✏ 网址列表</span>
+        <span class="url-count" id="urlCount">0</span>
+      </div>
+      <textarea id="urlTextarea" data-i18n-placeholder="urlPlaceholder"
+        placeholder="每行一个网址，例如：&#10;https://www.example.com&#10;github.com&#10;bilibili.com"></textarea>
+    </div>
+
+    <!-- 排除网址区域 -->
+    <div class="section">
+      <div class="section-header">
+        <span class="section-title" data-i18n="sectionExclude">🚫 排除网址</span>
+        <span class="url-count" id="excludeCount">0</span>
+      </div>
+      <textarea id="excludeTextarea" data-i18n-placeholder="excludePlaceholder"
+        style="height: 60px;"
+        placeholder="这些网址不会被复制、打开或保存&#10;每行一个网址或关键词，例如：&#10;google.com&#10;baidu.com"></textarea>
+    </div>
+    
+    <!-- 页脚 -->
+    <div class="footer">
+      <span data-i18n="footer">Made with ♡ by sandleft</span>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>

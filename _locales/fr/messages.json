@@ -1,0 +1,186 @@
+{
+  "appName": {
+    "message": "Hiyori Tools"
+  },
+  "appDesc": {
+    "message": "Outil mignon de gestion d'URLs et d'archivage web"
+  },
+  "popupTitle": {
+    "message": "🌸 hiyori's url 🌸"
+  },
+  "sectionOps": {
+    "message": "✦ Actions"
+  },
+  "btnCopy": {
+    "message": "✎ Copier tous les URLs ouverts"
+  },
+  "btnOpenAll": {
+    "message": "▷ Ouvrir tous les onglets"
+  },
+  "sectionSave": {
+    "message": "💝 Enregistrer"
+  },
+  "btnHarvest": {
+    "message": "✨ Tout enregistrer"
+  },
+  "btnSaveCurrent": {
+    "message": "🌸 Enregistrer la page actuelle"
+  },
+  "sectionAuto": {
+    "message": "⏱ Paramètres automatiques"
+  },
+  "autoOpenDelay": {
+    "message": "Après ouverture, délai de"
+  },
+  "autoSaveUnit": {
+    "message": "sec puis auto-enregistrement"
+  },
+  "sectionFormat": {
+    "message": "🎀 Format d'archivage"
+  },
+  "formatPNG": {
+    "message": "Capture d'écran (.png)"
+  },
+  "formatMD": {
+    "message": "Document (.md)"
+  },
+  "formatPDF": {
+    "message": "Document (.pdf)"
+  },
+  "formatFullPage": {
+    "message": "Capture pleine page"
+  },
+  "formatNotion": {
+    "message": "Synchroniser avec Notion"
+  },
+  "sectionNotion": {
+    "message": "◈ Configuration Notion"
+  },
+  "notionLabelToken": {
+    "message": "Jeton API"
+  },
+  "notionLabelDb": {
+    "message": "ID de base de données"
+  },
+  "notionFieldSettings": {
+    "message": "▸ Noms des champs (les défauts conviennent généralement)"
+  },
+  "notionTitleField": {
+    "message": "Nom du champ titre"
+  },
+  "notionUrlField": {
+    "message": "Nom du champ URL"
+  },
+  "notionTagsField": {
+    "message": "Nom du champ tags"
+  },
+  "notionDateField": {
+    "message": "Nom du champ date"
+  },
+  "btnSaveNotion": {
+    "message": "Enregistrer la config Notion ✨"
+  },
+  "btnNotionSaved": {
+    "message": "Enregistré ✓"
+  },
+  "sectionUrlList": {
+    "message": "✏ Liste d'URLs"
+  },
+  "urlPlaceholder": {
+    "message": "Un URL par ligne, ex. :\nhttps://www.example.com\ngithub.com"
+  },
+  "sectionExclude": {
+    "message": "🚫 URLs exclus"
+  },
+  "excludePlaceholder": {
+    "message": "Ces URLs ne seront pas copiés, ouverts ou enregistrés\nUn URL ou mot-clé par ligne"
+  },
+  "footer": {
+    "message": "Made with ♡ by sandleft"
+  },
+  "progressReady": {
+    "message": "Prêt..."
+  },
+  "progressOpening": {
+    "message": "Ouverture des onglets..."
+  },
+  "progressSaving": {
+    "message": "Auto-enregistrement..."
+  },
+  "progressAutoSave": {
+    "message": "$COUNT$ onglet(s) ouverts, auto-enregistrement dans $DELAY$ sec...",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "delay": {
+        "content": "$2"
+      }
+    }
+  },
+  "alertNoUrl": {
+    "message": "Veuillez saisir au moins un URL !"
+  },
+  "alertAllExcluded": {
+    "message": "Tous les URLs sont dans la liste d'exclusion, rien à ouvrir !"
+  },
+  "alertOpenedTabs": {
+    "message": "$COUNT$ onglet(s) ouvert(s) !",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertAutoSaveNoFormat": {
+    "message": "$COUNT$ onglet(s) ouvert(s) !\nAucun format sélectionné, auto-enregistrement ignoré.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertNoValidUrls": {
+    "message": "Aucun URL valide à copier ! Aucune page HTTP n'est ouverte."
+  },
+  "alertAllExcludedCopy": {
+    "message": "Tous les URLs ouverts sont exclus, rien à copier !"
+  },
+  "alertCopied": {
+    "message": "$COUNT$ URL(s) copié(s) !",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertCopyFailed": {
+    "message": "Échec de la copie : "
+  },
+  "alertNoFormat": {
+    "message": "Veuillez sélectionner au moins un format !"
+  },
+  "alertSaveFailed": {
+    "message": "Échec de l'enregistrement : "
+  },
+  "alertSaveComplete": {
+    "message": "Enregistrement terminé !"
+  },
+  "alertSaveResult": {
+    "message": "Enregistrement terminé !\nRéussis : $SUCCESS$\nÉchecs : $FAIL$\n\n$DETAILS$",
+    "placeholders": {
+      "success": {
+        "content": "$1"
+      },
+      "fail": {
+        "content": "$2"
+      },
+      "details": {
+        "content": "$3"
+      }
+    }
+  },
+  "harvestError": {
+    "message": "Erreur d'enregistrement : "
+  }
+}

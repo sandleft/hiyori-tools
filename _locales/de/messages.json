@@ -1,0 +1,186 @@
+{
+  "appName": {
+    "message": "Hiyori Tools"
+  },
+  "appDesc": {
+    "message": "Niedliches URL-Manager- und Web-Archivierungswerkzeug"
+  },
+  "popupTitle": {
+    "message": "🌸 hiyori's url 🌸"
+  },
+  "sectionOps": {
+    "message": "✦ Aktionen"
+  },
+  "btnCopy": {
+    "message": "✎ Alle offenen URLs kopieren"
+  },
+  "btnOpenAll": {
+    "message": "▷ Alle Tabs öffnen"
+  },
+  "sectionSave": {
+    "message": "💝 Speichern"
+  },
+  "btnHarvest": {
+    "message": "✨ Alles speichern"
+  },
+  "btnSaveCurrent": {
+    "message": "🌸 Aktuelle Seite speichern"
+  },
+  "sectionAuto": {
+    "message": "⏱ Automatische Einstellungen"
+  },
+  "autoOpenDelay": {
+    "message": "Nach dem Öffnen, Verzögerung von"
+  },
+  "autoSaveUnit": {
+    "message": "Sek. dann auto-speichern"
+  },
+  "sectionFormat": {
+    "message": "🎀 Archivformat"
+  },
+  "formatPNG": {
+    "message": "Screenshot (.png)"
+  },
+  "formatMD": {
+    "message": "Dokument (.md)"
+  },
+  "formatPDF": {
+    "message": "Dokument (.pdf)"
+  },
+  "formatFullPage": {
+    "message": "Vollseitenscreenshot"
+  },
+  "formatNotion": {
+    "message": "Mit Notion synchronisieren"
+  },
+  "sectionNotion": {
+    "message": "◈ Notion-Konfiguration"
+  },
+  "notionLabelToken": {
+    "message": "API-Token"
+  },
+  "notionLabelDb": {
+    "message": "Datenbank-ID"
+  },
+  "notionFieldSettings": {
+    "message": "▸ Feldnamen (Standardwerte sind meist ausreichend)"
+  },
+  "notionTitleField": {
+    "message": "Titelfeld-Name"
+  },
+  "notionUrlField": {
+    "message": "URL-Feld-Name"
+  },
+  "notionTagsField": {
+    "message": "Tags-Feld-Name"
+  },
+  "notionDateField": {
+    "message": "Datumsfeld-Name"
+  },
+  "btnSaveNotion": {
+    "message": "Notion-Einstellungen speichern ✨"
+  },
+  "btnNotionSaved": {
+    "message": "Gespeichert ✓"
+  },
+  "sectionUrlList": {
+    "message": "✏ URL-Liste"
+  },
+  "urlPlaceholder": {
+    "message": "Eine URL pro Zeile, z.B.:\nhttps://www.example.com\ngithub.com"
+  },
+  "sectionExclude": {
+    "message": "🚫 Ausgeschlossene URLs"
+  },
+  "excludePlaceholder": {
+    "message": "Diese URLs werden nicht kopiert, geöffnet oder gespeichert\nEine URL oder ein Schlüsselwort pro Zeile"
+  },
+  "footer": {
+    "message": "Made with ♡ by sandleft"
+  },
+  "progressReady": {
+    "message": "Bereit..."
+  },
+  "progressOpening": {
+    "message": "Tabs werden geöffnet..."
+  },
+  "progressSaving": {
+    "message": "Automatisch speichern..."
+  },
+  "progressAutoSave": {
+    "message": "$COUNT$ Tab(s) geöffnet, auto-speichern in $DELAY$ Sek...",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "delay": {
+        "content": "$2"
+      }
+    }
+  },
+  "alertNoUrl": {
+    "message": "Bitte mindestens eine URL eingeben!"
+  },
+  "alertAllExcluded": {
+    "message": "Alle URLs befinden sich in der Ausschlussliste, nichts zu öffnen!"
+  },
+  "alertOpenedTabs": {
+    "message": "$COUNT$ Tab(s) geöffnet!",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertAutoSaveNoFormat": {
+    "message": "$COUNT$ Tab(s) geöffnet!\nKein Format ausgewählt, auto-speichern übersprungen.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertNoValidUrls": {
+    "message": "Keine gültigen URLs zum Kopieren! Keine HTTP-Seiten geöffnet."
+  },
+  "alertAllExcludedCopy": {
+    "message": "Alle offenen URLs sind ausgeschlossen, nichts zu kopieren!"
+  },
+  "alertCopied": {
+    "message": "$COUNT$ URL(s) kopiert!",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertCopyFailed": {
+    "message": "Kopieren fehlgeschlagen: "
+  },
+  "alertNoFormat": {
+    "message": "Bitte mindestens ein Speicherformat auswählen!"
+  },
+  "alertSaveFailed": {
+    "message": "Speichern fehlgeschlagen: "
+  },
+  "alertSaveComplete": {
+    "message": "Speichern abgeschlossen!"
+  },
+  "alertSaveResult": {
+    "message": "Speichern abgeschlossen!\nErfolgreich: $SUCCESS$\nFehlgeschlagen: $FAIL$\n\n$DETAILS$",
+    "placeholders": {
+      "success": {
+        "content": "$1"
+      },
+      "fail": {
+        "content": "$2"
+      },
+      "details": {
+        "content": "$3"
+      }
+    }
+  },
+  "harvestError": {
+    "message": "Speicherfehler: "
+  }
+}

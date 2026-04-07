@@ -1,0 +1,186 @@
+{
+  "appName": {
+    "message": "Hiyori Tools"
+  },
+  "appDesc": {
+    "message": "Carino strumento di gestione URL e archiviazione web"
+  },
+  "popupTitle": {
+    "message": "🌸 hiyori's url 🌸"
+  },
+  "sectionOps": {
+    "message": "✦ Azioni"
+  },
+  "btnCopy": {
+    "message": "✎ Copia tutti gli URL aperti"
+  },
+  "btnOpenAll": {
+    "message": "▷ Apri tutte le schede"
+  },
+  "sectionSave": {
+    "message": "💝 Salva"
+  },
+  "btnHarvest": {
+    "message": "✨ Salva tutto"
+  },
+  "btnSaveCurrent": {
+    "message": "🌸 Salva pagina corrente"
+  },
+  "sectionAuto": {
+    "message": "⏱ Impostazioni automatiche"
+  },
+  "autoOpenDelay": {
+    "message": "Dopo l'apertura, ritardo di"
+  },
+  "autoSaveUnit": {
+    "message": "sec poi salvataggio auto"
+  },
+  "sectionFormat": {
+    "message": "🎀 Formato di archiviazione"
+  },
+  "formatPNG": {
+    "message": "Screenshot (.png)"
+  },
+  "formatMD": {
+    "message": "Documento (.md)"
+  },
+  "formatPDF": {
+    "message": "Documento (.pdf)"
+  },
+  "formatFullPage": {
+    "message": "Screenshot intera pagina"
+  },
+  "formatNotion": {
+    "message": "Sincronizza con Notion"
+  },
+  "sectionNotion": {
+    "message": "◈ Configurazione Notion"
+  },
+  "notionLabelToken": {
+    "message": "Token API"
+  },
+  "notionLabelDb": {
+    "message": "ID del database"
+  },
+  "notionFieldSettings": {
+    "message": "▸ Nomi dei campi (i valori predefiniti vanno generalmente bene)"
+  },
+  "notionTitleField": {
+    "message": "Nome del campo titolo"
+  },
+  "notionUrlField": {
+    "message": "Nome del campo URL"
+  },
+  "notionTagsField": {
+    "message": "Nome del campo tag"
+  },
+  "notionDateField": {
+    "message": "Nome del campo data"
+  },
+  "btnSaveNotion": {
+    "message": "Salva impostazioni Notion ✨"
+  },
+  "btnNotionSaved": {
+    "message": "Salvato ✓"
+  },
+  "sectionUrlList": {
+    "message": "✏ Lista URL"
+  },
+  "urlPlaceholder": {
+    "message": "Un URL per riga, es.:\nhttps://www.example.com\ngithub.com"
+  },
+  "sectionExclude": {
+    "message": "🚫 URL esclusi"
+  },
+  "excludePlaceholder": {
+    "message": "Questi URL non saranno copiati, aperti o salvati\nUn URL o parola chiave per riga"
+  },
+  "footer": {
+    "message": "Made with ♡ by sandleft"
+  },
+  "progressReady": {
+    "message": "Pronto..."
+  },
+  "progressOpening": {
+    "message": "Apertura schede..."
+  },
+  "progressSaving": {
+    "message": "Salvataggio automatico..."
+  },
+  "progressAutoSave": {
+    "message": "$COUNT$ scheda/e aperta/e, salvataggio auto tra $DELAY$ sec...",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      },
+      "delay": {
+        "content": "$2"
+      }
+    }
+  },
+  "alertNoUrl": {
+    "message": "Inserisci almeno un URL!"
+  },
+  "alertAllExcluded": {
+    "message": "Tutti gli URL sono nella lista di esclusione, niente da aprire!"
+  },
+  "alertOpenedTabs": {
+    "message": "$COUNT$ scheda/e aperta/e!",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertAutoSaveNoFormat": {
+    "message": "$COUNT$ scheda/e aperta/e!\nNessun formato selezionato, salvataggio auto saltato.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertNoValidUrls": {
+    "message": "Nessun URL valido da copiare! Nessuna pagina HTTP aperta."
+  },
+  "alertAllExcludedCopy": {
+    "message": "Tutti gli URL aperti sono esclusi, niente da copiare!"
+  },
+  "alertCopied": {
+    "message": "$COUNT$ URL copiato/i!",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "alertCopyFailed": {
+    "message": "Copia fallita: "
+  },
+  "alertNoFormat": {
+    "message": "Seleziona almeno un formato di salvataggio!"
+  },
+  "alertSaveFailed": {
+    "message": "Salvataggio fallito: "
+  },
+  "alertSaveComplete": {
+    "message": "Salvataggio completato!"
+  },
+  "alertSaveResult": {
+    "message": "Salvataggio completato!\nRiusciti: $SUCCESS$\nFalliti: $FAIL$\n\n$DETAILS$",
+    "placeholders": {
+      "success": {
+        "content": "$1"
+      },
+      "fail": {
+        "content": "$2"
+      },
+      "details": {
+        "content": "$3"
+      }
+    }
+  },
+  "harvestError": {
+    "message": "Errore di salvataggio: "
+  }
+}
