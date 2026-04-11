@@ -120,3 +120,9 @@ Hiyori Tools **完全在本地运行**。不会收集、追踪或上传任何数
 ---
 
 *Made with ♡ by sandleft*
+
+---
+
+## 鸣谢
+
+感谢 [LINUX DO](https://linux.do) 社区的支持与推广。
