@@ -343,18 +343,20 @@ async function executeAutoSave() {
   await waitForAllTabsComplete(30000);
 
   const formatData = await chrome.storage.local.get([
-    'savePNG', 'saveMD', 'savePDF', 'saveFullPage', 'saveNotion'
+    'savePNG', 'saveMD', 'savePDF', 'saveHTML', 'saveJSON', 'saveFullPage', 'saveNotion'
   ]);
-  
+
   const config = {
     savePNG: formatData.savePNG || false,
     saveMD: formatData.saveMD || false,
     savePDF: formatData.savePDF || false,
+    saveHTML: formatData.saveHTML || false,
+    saveJSON: formatData.saveJSON || false,
     saveFullPage: formatData.saveFullPage || false,
     saveNotion: formatData.saveNotion || false
   };
-  
-  if (config.savePNG || config.saveMD || config.savePDF || config.saveFullPage || config.saveNotion) {
+
+  if (config.savePNG || config.saveMD || config.savePDF || config.saveHTML || config.saveJSON || config.saveFullPage || config.saveNotion) {
     console.log('开始自动保存，配置:', config);
     
     // 显示通知
@@ -539,7 +541,27 @@ async function harvestAllTabs(config) {
           results.push(`❌ PDF失败: ${tab.title}`);
         }
       }
-      
+
+      if (config.saveHTML) {
+        try {
+          await extractAndSaveHtml(tab);
+          results.push(`✅ HTML: ${tab.title}`);
+        } catch (e) {
+          console.error('HTML保存失败:', e);
+          results.push(`❌ HTML失败: ${tab.title}`);
+        }
+      }
+
+      if (config.saveJSON) {
+        try {
+          await extractAndSaveJson(tab);
+          results.push(`✅ JSON: ${tab.title}`);
+        } catch (e) {
+          console.error('JSON保存失败:', e);
+          results.push(`❌ JSON失败: ${tab.title}`);
+        }
+      }
+
       if (config.saveFullPage) {
         try {
           await captureFullPageStable(tab);
@@ -647,7 +669,25 @@ async function saveCurrentTab(config) {
         results.push(`❌ PDF失败: ${e.message}`);
       }
     }
-    
+
+    if (config.saveHTML) {
+      try {
+        await extractAndSaveHtml(tab);
+        results.push(`✅ HTML: ${tab.title}`);
+      } catch (e) {
+        results.push(`❌ HTML失败: ${e.message}`);
+      }
+    }
+
+    if (config.saveJSON) {
+      try {
+        await extractAndSaveJson(tab);
+        results.push(`✅ JSON: ${tab.title}`);
+      } catch (e) {
+        results.push(`❌ JSON失败: ${e.message}`);
+      }
+    }
+
     if (config.saveFullPage) {
       try {
         await captureFullPageStable(tab);
@@ -810,7 +850,7 @@ async function saveAsPdf(tab) {
   try {
     await chrome.tabs.update(tab.id, { active: true });
     await new Promise(resolve => setTimeout(resolve, 300));
-    
+
     // 执行打印
     await chrome.scripting.executeScript({
       target: { tabId: tab.id },
@@ -818,10 +858,89 @@ async function saveAsPdf(tab) {
         window.print();
       }
     });
-    
+
     return true;
   } catch (error) {
     console.error('PDF保存失败:', error);
+    throw error;
+  }
+}
+
+/**
+ * 提取页面源代码并保存为HTML
+ */
+async function extractAndSaveHtml(tab) {
+  try {
+    const result = await chrome.scripting.executeScript({
+      target: { tabId: tab.id },
+      func: () => ({
+        title: document.title || 'Untitled',
+        html: document.documentElement?.outerHTML || '<html></html>'
+      })
+    });
+
+    if (!result || result.length === 0) {
+      throw new Error('无法提取页面 HTML');
+    }
+
+    const { title, html } = result[0].result;
+    const htmlContent = '<!DOCTYPE html>\n' + html;
+    const blob = new Blob([htmlContent], { type: 'text/html;charset=utf-8' });
+    const dataUrl = await blobToDataUrl(blob);
+
+    const filename = sanitizeFilename(title.substring(0, 40) || `page_${Date.now()}`);
+    const timestamp = new Date().toISOString().slice(0, 19).replace(/[:T]/g, '-');
+
+    await chrome.downloads.download({
+      url: dataUrl,
+      filename: `Harvest/HTML/${timestamp}_${filename}.html`,
+      saveAs: false
+    });
+
+    return true;
+  } catch (error) {
+    console.error('HTML保存失败:', error);
+    throw error;
+  }
+}
+
+/**
+ * 提取页面结构数据并保存为JSON
+ */
+async function extractAndSaveJson(tab) {
+  try {
+    const result = await chrome.scripting.executeScript({
+      target: { tabId: tab.id },
+      func: () => ({
+        title: document.title || 'Untitled',
+        url: window.location.href,
+        savedAt: new Date().toISOString(),
+        text: (document.body?.innerText || '').substring(0, 50000),
+        html: (document.documentElement?.outerHTML || '').substring(0, 200000)
+      })
+    });
+
+    if (!result || result.length === 0) {
+      throw new Error('无法提取页面 JSON');
+    }
+
+    const pageData = result[0].result;
+    const jsonContent = JSON.stringify(pageData, null, 2);
+    const blob = new Blob([jsonContent], { type: 'application/json;charset=utf-8' });
+    const dataUrl = await blobToDataUrl(blob);
+
+    const filename = sanitizeFilename(pageData.title.substring(0, 40) || `page_${Date.now()}`);
+    const timestamp = new Date().toISOString().slice(0, 19).replace(/[:T]/g, '-');
+
+    await chrome.downloads.download({
+      url: dataUrl,
+      filename: `Harvest/JSON/${timestamp}_${filename}.json`,
+      saveAs: false
+    });
+
+    return true;
+  } catch (error) {
+    console.error('JSON保存失败:', error);
     throw error;
   }
 }

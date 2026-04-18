@@ -58,6 +58,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   const savePNG      = document.getElementById('savePNG');
   const saveMD       = document.getElementById('saveMD');
   const savePDF      = document.getElementById('savePDF');
+  const saveHTML     = document.getElementById('saveHTML');
+  const saveJSON     = document.getElementById('saveJSON');
   const saveFullPage = document.getElementById('saveFullPage');
   const saveNotion   = document.getElementById('saveNotion');
 
@@ -110,7 +112,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   if (startupDelay)    startupDelay.addEventListener('blur', saveAutoSettings);
   if (startupEnabled)  startupEnabled.addEventListener('change', saveAutoSettings);
 
-  [savePNG, saveMD, savePDF, saveFullPage, saveNotion].forEach(cb => {
+  [savePNG, saveMD, savePDF, saveHTML, saveJSON, saveFullPage, saveNotion].forEach(cb => {
     cb.addEventListener('change', saveFormatSettings);
   });
 
@@ -129,7 +131,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   async function loadSavedData() {
     try {
       const data = await chrome.storage.local.get([
-        'urlList', 'excludeList', 'savePNG', 'saveMD', 'savePDF', 'saveFullPage', 'saveNotion',
+        'urlList', 'excludeList', 'savePNG', 'saveMD', 'savePDF', 'saveHTML', 'saveJSON', 'saveFullPage', 'saveNotion',
         'autoSaveDelay', 'scheduledHour', 'scheduledMinute', 'startupDelay', 'startupEnabled',
         'notionApiKey', 'notionDatabaseId',
         'notionPropTitle', 'notionPropUrl', 'notionPropTags', 'notionPropTime'
@@ -140,6 +142,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       if (data.savePNG      !== undefined) savePNG.checked      = data.savePNG;
       if (data.saveMD       !== undefined) saveMD.checked       = data.saveMD;
       if (data.savePDF      !== undefined) savePDF.checked      = data.savePDF;
+      if (data.saveHTML     !== undefined) saveHTML.checked     = data.saveHTML;
+      if (data.saveJSON     !== undefined) saveJSON.checked     = data.saveJSON;
       if (data.saveFullPage !== undefined) saveFullPage.checked = data.saveFullPage;
       if (data.saveNotion   !== undefined) saveNotion.checked   = data.saveNotion;
       if (data.autoSaveDelay)  autoSaveDelay.value  = data.autoSaveDelay;
@@ -210,6 +214,8 @@ document.addEventListener('DOMContentLoaded', async () => {
         savePNG: savePNG.checked,
         saveMD:  saveMD.checked,
         savePDF: savePDF.checked,
+        saveHTML: saveHTML.checked,
+        saveJSON: saveJSON.checked,
         saveFullPage: saveFullPage.checked,
         saveNotion:   saveNotion.checked
       });
@@ -398,6 +404,8 @@ document.addEventListener('DOMContentLoaded', async () => {
       savePNG:      savePNG.checked,
       saveMD:       saveMD.checked,
       savePDF:      savePDF.checked,
+      saveHTML:     saveHTML.checked,
+      saveJSON:     saveJSON.checked,
       saveFullPage: saveFullPage.checked,
       saveNotion:   saveNotion.checked
     };
@@ -405,6 +413,7 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   function hasSelectedFormat(config) {
     return config.savePNG || config.saveMD || config.savePDF ||
+           config.saveHTML || config.saveJSON ||
            config.saveFullPage || config.saveNotion;
   }
 

@@ -47,6 +47,12 @@
   "formatPDF": {
     "message": "文件 (.pdf)"
   },
+  "formatHTML": {
+    "message": "網頁原始碼 (.html)"
+  },
+  "formatJSON": {
+    "message": "結構化資料 (.json)"
+  },
   "formatFullPage": {
     "message": "整頁截圖"
   },

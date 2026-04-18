@@ -47,6 +47,12 @@
   "formatPDF": {
     "message": "Document (.pdf)"
   },
+  "formatHTML": {
+    "message": "Code source de la page (.html)"
+  },
+  "formatJSON": {
+    "message": "Données structurées (.json)"
+  },
   "formatFullPage": {
     "message": "Capture pleine page"
   },

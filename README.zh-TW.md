@@ -9,6 +9,13 @@
 
 ---
 
+## 📦 下載地址
+
+- Edge 瀏覽器下載地址：https://microsoftedge.microsoft.com/addons/detail/hiyori-tools/ffkpgbobmimcehhcmehkadmkefblaidj
+- Chrome 下載地址：正在審核中
+
+---
+
 ## 📖 簡介
 
 一款輕量高效的瀏覽器擴充功能，幫助你批次管理網址、一鍵收割網頁內容。適合日常收藏、資料歸檔、知識管理等場景。
@@ -25,6 +32,8 @@
 ### 📥 網頁收割
 - 截圖保存（`.png`）
 - 文件保存（`.md`）
+- 網頁原始碼保存（`.html`）
+- 結構化資料保存（`.json`）
 - PDF 保存（呼叫瀏覽器列印）
 - 整張網頁截圖（長頁面自動拼接）
 - 同步到 Notion（可自訂欄位名稱）
@@ -44,7 +53,8 @@
 
 ### 1. 安裝
 
-從 [Chrome 線上應用程式商店](https://chromewebstore.google.com) 或 [Microsoft Edge 附加元件](https://microsoftedge.microsoft.com/addons) 安裝 **Hiyori Tools**。
+- Edge 瀏覽器下載地址：https://microsoftedge.microsoft.com/addons/detail/hiyori-tools/ffkpgbobmimcehhcmehkadmkefblaidj
+- Chrome 下載地址：正在審核中
 
 安裝後，點擊瀏覽器工具列的拼圖圖示，將 Hiyori Tools **釘選**起來，方便隨時存取。
 
@@ -76,6 +86,8 @@
 |------|---------|
 | 📸 截圖（`.png`） | 點擊 **「截圖保存」** — 儲存目前可見區域的截圖 |
 | 📄 文件（`.md`） | 點擊 **「Markdown 保存」** — 將頁面內容提取為 `.md` 檔案 |
+| 🌐 HTML（`.html`） | 點擊 **「HTML 保存」** — 將目前頁面原始碼儲存為 `.html` 檔案 |
+| 🧩 JSON（`.json`） | 點擊 **「JSON 保存」** — 將目前頁面結構化資料儲存為 `.json` 檔案 |
 | 🖨️ PDF | 點擊 **「PDF 保存」** — 開啟瀏覽器列印對話框（選擇「儲存為 PDF」） |
 | 📜 整頁截圖 | 點擊 **「整頁截圖」** — 擷取並自動拼接整個可捲動頁面 |
 | 🗂️ 同步到 Notion | 請見下方 Notion 設定 |

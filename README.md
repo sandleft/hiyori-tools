@@ -9,6 +9,13 @@
 
 ---
 
+## 📦 Download
+
+- Microsoft Edge Add-ons: https://microsoftedge.microsoft.com/addons/detail/hiyori-tools/ffkpgbobmimcehhcmehkadmkefblaidj
+- Chrome Web Store: Under review
+
+---
+
 ## 📖 Introduction
 
 A lightweight and efficient browser extension helping you batch manage URLs and harvest web content with one click. Suitable for daily bookmarking, data archiving, and knowledge management.
@@ -25,6 +32,8 @@ A lightweight and efficient browser extension helping you batch manage URLs and 
 ### 📥 Web Harvesting
 - Save as screenshot (`.png`)
 - Save as document (`.md`)
+- Save as HTML page source (`.html`)
+- Save as structured data (`.json`)
 - Save as PDF (calls browser print)
 - Full webpage screenshot (auto-stitches long pages)
 - Sync to Notion (customizable field names)
@@ -44,7 +53,8 @@ A lightweight and efficient browser extension helping you batch manage URLs and 
 
 ### 1. Installation
 
-Install **Hiyori Tools** from the [Chrome Web Store](https://chromewebstore.google.com) or [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons).
+- Microsoft Edge Add-ons: https://microsoftedge.microsoft.com/addons/detail/hiyori-tools/ffkpgbobmimcehhcmehkadmkefblaidj
+- Chrome Web Store: Under review
 
 After installation, click the puzzle icon in your browser toolbar and **pin** Hiyori Tools for quick access.
 
@@ -76,6 +86,8 @@ Navigate to the page you want to save, then click the Hiyori Tools icon.
 |--------|-----------|
 | 📸 Screenshot (`.png`) | Click **"Save as Screenshot"** — saves a visible-area screenshot |
 | 📄 Document (`.md`) | Click **"Save as Markdown"** — extracts page content as a `.md` file |
+| 🌐 HTML (`.html`) | Click **"Save as HTML"** — saves the current page source as a `.html` file |
+| 🧩 JSON (`.json`) | Click **"Save as JSON"** — saves structured page data as a `.json` file |
 | 🖨️ PDF | Click **"Save as PDF"** — opens browser print dialog (choose "Save as PDF") |
 | 📜 Full Page Screenshot | Click **"Full Page Screenshot"** — captures and stitches the entire scrollable page |
 | 🗂️ Sync to Notion | See Notion Setup below |
@@ -120,9 +132,3 @@ Hiyori Tools runs **entirely locally**. No data is collected, tracked, or upload
 ---
 
 *Made with ♡ by sandleft*
-
----
-
-## Acknowledgements
-
-Thanks to the [LINUX DO](https://linux.do) community for their support and promotion.

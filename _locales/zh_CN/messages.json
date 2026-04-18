@@ -47,6 +47,12 @@
   "formatPDF": {
     "message": "文档 (.pdf)"
   },
+  "formatHTML": {
+    "message": "网页源文件 (.html)"
+  },
+  "formatJSON": {
+    "message": "结构数据 (.json)"
+  },
   "formatFullPage": {
     "message": "整张网页截图"
   },

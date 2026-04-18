@@ -9,6 +9,13 @@
 
 ---
 
+## 📦 Descarga
+
+- Descarga para Edge: https://microsoftedge.microsoft.com/addons/detail/hiyori-tools/ffkpgbobmimcehhcmehkadmkefblaidj
+- Descarga para Chrome: En revisión
+
+---
+
 ## 📖 Introducción
 
 Una extensión de navegador ligera y eficiente que te ayuda a administrar URLs por lotes y recolectar contenido web con un solo clic. Adecuada para marcadores diarios, archivo de datos y gestión del conocimiento.
@@ -25,6 +32,8 @@ Una extensión de navegador ligera y eficiente que te ayuda a administrar URLs p
 ### 📥 Recolección Web
 - Guardar como captura de pantalla (`.png`)
 - Guardar como documento (`.md`)
+- Guardar como código fuente de la página (`.html`)
+- Guardar como datos estructurados (`.json`)
 - Guardar como PDF (llama a la impresión del navegador)
 - Captura de pantalla de página completa (une páginas largas automáticamente)
 - Sincronizar con Notion (nombres de campos personalizables)
@@ -44,7 +53,8 @@ Una extensión de navegador ligera y eficiente que te ayuda a administrar URLs p
 
 ### 1. Instalación
 
-Instala **Hiyori Tools** desde la [Chrome Web Store](https://chromewebstore.google.com) o los [complementos de Microsoft Edge](https://microsoftedge.microsoft.com/addons).
+- Descarga para Edge: https://microsoftedge.microsoft.com/addons/detail/hiyori-tools/ffkpgbobmimcehhcmehkadmkefblaidj
+- Descarga para Chrome: En revisión
 
 Tras la instalación, haz clic en el icono del rompecabezas en la barra de herramientas de tu navegador y **fija** Hiyori Tools para acceso rápido.
 
@@ -76,6 +86,8 @@ Navega hasta la página que deseas guardar y haz clic en el icono de Hiyori Tool
 |---------|----------|
 | 📸 Captura de pantalla (`.png`) | Clic en **"Guardar como captura"** — guarda el área visible |
 | 📄 Documento (`.md`) | Clic en **"Guardar como Markdown"** — extrae el contenido de la página como archivo `.md` |
+| 🌐 HTML (`.html`) | Clic en **"Guardar como HTML"** — guarda el código fuente actual de la página como archivo `.html` |
+| 🧩 JSON (`.json`) | Clic en **"Guardar como JSON"** — guarda los datos estructurados de la página como archivo `.json` |
 | 🖨️ PDF | Clic en **"Guardar como PDF"** — abre el diálogo de impresión del navegador (elige "Guardar como PDF") |
 | 📜 Captura de página completa | Clic en **"Captura completa"** — captura y une toda la página desplazable |
 | 🗂️ Sincronizar con Notion | Ver configuración de Notion abajo |

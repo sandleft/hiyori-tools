@@ -9,6 +9,13 @@
 
 ---
 
+## 📦 다운로드
+
+- Edge 브라우저 다운로드: https://microsoftedge.microsoft.com/addons/detail/hiyori-tools/ffkpgbobmimcehhcmehkadmkefblaidj
+- Chrome 다운로드: 심사 중
+
+---
+
 ## 📖 소개
 
 URL을 일괄 관리하고 웹 콘텐츠를 원클릭으로 수집할 수 있도록 돕는 가볍고 효율적인 브라우저 확장 프로그램입니다. 일상적인 북마크, 자료 보관, 지식 관리에 적합합니다.
@@ -25,6 +32,8 @@ URL을 일괄 관리하고 웹 콘텐츠를 원클릭으로 수집할 수 있도
 ### 📥 웹 수집
 - 스크린샷 저장 (`.png`)
 - 문서 저장 (`.md`)
+- 페이지 소스 저장 (`.html`)
+- 구조화 데이터 저장 (`.json`)
 - PDF 저장 (브라우저 인쇄 호출)
 - 전체 웹 페이지 스크린샷 (긴 페이지 자동 병합)
 - Notion 동기화 (필드명 사용자 지정 가능)
@@ -44,7 +53,8 @@ URL을 일괄 관리하고 웹 콘텐츠를 원클릭으로 수집할 수 있도
 
 ### 1. 설치
 
-[Chrome 웹 스토어](https://chromewebstore.google.com) 또는 [Microsoft Edge 추가 기능](https://microsoftedge.microsoft.com/addons)에서 **Hiyori Tools**를 설치하세요.
+- Edge 브라우저 다운로드: https://microsoftedge.microsoft.com/addons/detail/hiyori-tools/ffkpgbobmimcehhcmehkadmkefblaidj
+- Chrome 다운로드: 심사 중
 
 설치 후, 브라우저 툴바의 퍼즐 아이콘을 클릭하고 Hiyori Tools를 **고정**하면 편리하게 접근할 수 있습니다.
 
@@ -76,6 +86,8 @@ URL을 일괄 관리하고 웹 콘텐츠를 원클릭으로 수집할 수 있도
 |------|---------|
 | 📸 스크린샷 (`.png`) | **"스크린샷으로 저장"** 클릭 — 현재 화면 영역 저장 |
 | 📄 문서 (`.md`) | **"Markdown으로 저장"** 클릭 — 페이지 내용을 `.md` 파일로 추출 |
+| 🌐 HTML (`.html`) | **"HTML로 저장"** 클릭 — 현재 페이지 소스를 `.html` 파일로 저장 |
+| 🧩 JSON (`.json`) | **"JSON으로 저장"** 클릭 — 현재 페이지의 구조화 데이터를 `.json` 파일로 저장 |
 | 🖨️ PDF | **"PDF로 저장"** 클릭 — 브라우저 인쇄 대화상자 열림 ("PDF로 저장" 선택) |
 | 📜 전체 페이지 스크린샷 | **"전체 페이지 스크린샷"** 클릭 — 전체 스크롤 페이지를 캡처하여 병합 |
 | 🗂️ Notion 동기화 | 아래 Notion 설정 참조 |

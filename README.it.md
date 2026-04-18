@@ -9,6 +9,13 @@
 
 ---
 
+## 📦 Download
+
+- Download per Edge: https://microsoftedge.microsoft.com/addons/detail/hiyori-tools/ffkpgbobmimcehhcmehkadmkefblaidj
+- Download per Chrome: In revisione
+
+---
+
 ## 📖 Introduzione
 
 Un'estensione per browser leggera ed efficiente che ti aiuta a gestire gli URL in batch e a raccogliere contenuti web con un clic. Adatta per i preferiti quotidiani, l'archiviazione dei dati e la gestione della conoscenza.
@@ -25,6 +32,8 @@ Un'estensione per browser leggera ed efficiente che ti aiuta a gestire gli URL i
 ### 📥 Raccolta Web
 - Salva come screenshot (`.png`)
 - Salva come documento (`.md`)
+- Salva il sorgente della pagina (`.html`)
+- Salva come dati strutturati (`.json`)
 - Salva come PDF (richiama la stampa del browser)
 - Screenshot dell'intera pagina web (unisce automaticamente le pagine lunghe)
 - Sincronizza con Notion (nomi dei campi personalizzabili)
@@ -44,7 +53,8 @@ Un'estensione per browser leggera ed efficiente che ti aiuta a gestire gli URL i
 
 ### 1. Installazione
 
-Installa **Hiyori Tools** dal [Chrome Web Store](https://chromewebstore.google.com) o dai [componenti aggiuntivi di Microsoft Edge](https://microsoftedge.microsoft.com/addons).
+- Download per Edge: https://microsoftedge.microsoft.com/addons/detail/hiyori-tools/ffkpgbobmimcehhcmehkadmkefblaidj
+- Download per Chrome: In revisione
 
 Dopo l'installazione, clicca sull'icona del puzzle nella barra degli strumenti del browser e **aggiungi** Hiyori Tools per un accesso rapido.
 
@@ -76,6 +86,8 @@ Naviga fino alla pagina che vuoi salvare e clicca sull'icona di Hiyori Tools.
 |---------|------------|
 | 📸 Screenshot (`.png`) | Clicca su **"Salva come screenshot"** — salva l'area visibile |
 | 📄 Documento (`.md`) | Clicca su **"Salva come Markdown"** — estrae il contenuto della pagina come file `.md` |
+| 🌐 HTML (`.html`) | Clicca su **"Salva come HTML"** — salva il sorgente attuale della pagina come file `.html` |
+| 🧩 JSON (`.json`) | Clicca su **"Salva come JSON"** — salva i dati strutturati della pagina come file `.json` |
 | 🖨️ PDF | Clicca su **"Salva come PDF"** — apre la finestra di stampa del browser (scegli "Salva come PDF") |
 | 📜 Screenshot pagina intera | Clicca su **"Screenshot intera pagina"** — cattura e unisce l'intera pagina scorrevole |
 | 🗂️ Sincronizza con Notion | Vedi configurazione Notion qui sotto |

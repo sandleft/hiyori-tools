@@ -9,6 +9,13 @@
 
 ---
 
+## 📦 Download
+
+- Edge-Download: https://microsoftedge.microsoft.com/addons/detail/hiyori-tools/ffkpgbobmimcehhcmehkadmkefblaidj
+- Chrome-Download: In Überprüfung
+
+---
+
 ## 📖 Einführung
 
 Eine leichte und effiziente Browser-Erweiterung, die Ihnen hilft, URLs stapelweise zu verwalten und Web-Inhalte mit einem Klick zu sammeln. Geeignet für tägliche Lesezeichen, Datenarchivierung und Wissensmanagement.
@@ -25,6 +32,8 @@ Eine leichte und effiziente Browser-Erweiterung, die Ihnen hilft, URLs stapelwei
 ### 📥 Web-Sammlung
 - Als Screenshot speichern (`.png`)
 - Als Dokument speichern (`.md`)
+- Als Seitenquelltext speichern (`.html`)
+- Als strukturierte Daten speichern (`.json`)
 - Als PDF speichern (ruft Browser-Druck auf)
 - Vollständiger Webseiten-Screenshot (lange Seiten werden automatisch zusammengefügt)
 - Mit Notion synchronisieren (anpassbare Feldnamen)
@@ -44,7 +53,8 @@ Eine leichte und effiziente Browser-Erweiterung, die Ihnen hilft, URLs stapelwei
 
 ### 1. Installation
 
-Installieren Sie **Hiyori Tools** aus dem [Chrome Web Store](https://chromewebstore.google.com) oder den [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons).
+- Edge-Download: https://microsoftedge.microsoft.com/addons/detail/hiyori-tools/ffkpgbobmimcehhcmehkadmkefblaidj
+- Chrome-Download: In Überprüfung
 
 Nach der Installation klicken Sie auf das Puzzle-Symbol in der Browser-Symbolleiste und **heften** Sie Hiyori Tools für schnellen Zugriff an.
 
@@ -76,6 +86,8 @@ Navigieren Sie zu der Seite, die Sie speichern möchten, und klicken Sie auf das
 |--------|-----------|
 | 📸 Screenshot (`.png`) | **„Als Screenshot speichern"** klicken — speichert den sichtbaren Bereich |
 | 📄 Dokument (`.md`) | **„Als Markdown speichern"** klicken — extrahiert Seiteninhalt als `.md`-Datei |
+| 🌐 HTML (`.html`) | **„Als HTML speichern"** klicken — speichert den aktuellen Seitenquelltext als `.html`-Datei |
+| 🧩 JSON (`.json`) | **„Als JSON speichern"** klicken — speichert strukturierte Seitendaten als `.json`-Datei |
 | 🖨️ PDF | **„Als PDF speichern"** klicken — öffnet den Browser-Druckdialog (wählen Sie „Als PDF speichern") |
 | 📜 Vollseiten-Screenshot | **„Vollseiten-Screenshot"** klicken — erfasst und fügt die gesamte scrollbare Seite zusammen |
 | 🗂️ Mit Notion synchronisieren | Siehe Notion-Einrichtung unten |
