@@ -132,3 +132,9 @@ Hiyori Tools runs **entirely locally**. No data is collected, tracked, or upload
 ---
 
 *Made with ♡ by sandleft*
+
+---
+
+## 鸣谢
+
+感谢 [LINUX DO](https://linux.do) 社区的支持与推广。
